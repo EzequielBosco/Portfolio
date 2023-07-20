@@ -6,14 +6,14 @@ Math.SineInOut = function(percent, amp) {
 };
 
 let app, graphics, space;
-let total_vertices = 6;
+let total_vertices = 5;
 let amplitud = 150;
 let width, height, halfHeight;
 
 function init() {
 	app = new PIXI.Application({ antialias: true, resolution: window.devicePixelRatio, transparent: true });
 	document.body.appendChild(app.view);
-	//
+
 	graphics = new PIXI.Graphics();
 	app.stage.addChild(graphics);
 	resize();
@@ -76,3 +76,30 @@ function resize() {
 
 init();
 animate();
+
+//------------------------
+
+const footer = document.querySelector('footer');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        footer.style.display = 'block'
+    } else {
+        footer.style.display = 'none'
+    }
+})
+
+//------------------------
+
+const nav = document.getElementById('nav');
+const navOffset = nav.offsetTop;
+
+function checkStickyNav() {
+    if (window.pageYOffset > navOffset) {
+        nav.classList.add('nav-sticky')
+    } else {
+        nav.classList.remove('nav-sticky')
+    }
+}
+
+window.addEventListener('scroll', checkStickyNav)
