@@ -1,0 +1,33 @@
+.main-work {
+    margin-top: 0;
+    height: auto;
+    margin-bottom: 40rem;
+}
+
+.container-work {
+    display: flex;
+    height: 50vh;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.item {
+    display: flex;
+    flex: 1;
+    border: solid 1px white;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}

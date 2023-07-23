@@ -1,3 +1,12 @@
+:root {
+    --color-primary: rgb(4, 3, 5);
+    --color-details: rgb(18, 13, 37);
+    --color-highlight: rgb(92, 103, 163);
+    --color-highlight-1: rgba(91, 100, 155, 0.788);
+    --color-medium: rgb(41, 45, 65);
+    --color-medium-nav: rgba(41, 45, 65, 0.384);
+}
+
 html, body {
     color: white;
     margin:0;
@@ -50,6 +59,7 @@ nav {
 
 nav:hover {
     background-color: rgba(182, 182, 182, 0.233);
+    background-color: var(--color-medium-nav);
 }
 
 #nav.nav-sticky {
@@ -80,8 +90,6 @@ img:hover {
 }
 
 main {
-    font-family: 'GFS Didot';
-    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,8 +98,19 @@ main {
     padding-top: 10rem;
 }
 
-main p {
-    max-width: 30em;
+.main-nav {
+    font-family: 'GFS Didot';
+    font-size: 1.8rem;
+}
+
+main h1 {
+    margin-bottom: 0;
+}
+
+main h3 {
+    font-size: 38px;
+    margin-top: 0.8;
+    margin-bottom: 1;
 }
 
 a {
@@ -173,11 +192,33 @@ button {
   }
 
   button:hover {
-    background-color: rgb(20, 19, 20);
+    background-color: var(--color-highlight-1);
   }
 
 hr.final {
     width: 200px;
     margin: 0 auto;
     opacity: 80%;
+}
+
+.typing-effect {
+    font-size: 24px;
+    border-right: 2px solid #333;
+    white-space: pre;
+    overflow: hidden;
+    padding: 8px;
+    animation: typing 2s steps(15, end), blink-caret 0.75s steps(1, end) 2s infinite;
+    display: flex;
+    justify-content: center;
+    color: var(--color-highlight);
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 20% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
 }
