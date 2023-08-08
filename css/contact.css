@@ -1,0 +1,39 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 15px;
+    margin-bottom: 4rem;
+}
+
+.body-contact {
+    color: white;
+    margin:0;
+    padding:0;
+    height:100%;
+    position: relative;
+    margin-bottom: 0;
+}
+
+input {
+    border: 1px solid var(--color);
+    border-radius: 8px;
+    padding: 0.4rem 2rem 0.4rem 0.8rem;
+    background: #25252586;
+    color: white;
+}
+
+#message {
+    padding: 0.4rem 2rem 4rem 0.8rem;
+}
+
+.contact-group {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    align-items: start;
+}
+
+form label {
+    font-size: 20px;
+}
