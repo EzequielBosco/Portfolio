@@ -42,3 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 // ------------------------------------------------------
+
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggle-menu')
+    const mobileMenu = document.getElementById('mobile-menu')
+
+    toggleButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('active');
+    })
+})

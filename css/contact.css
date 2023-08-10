@@ -37,3 +37,7 @@ input {
 form label {
     font-size: 20px;
 }
+
+.email-link {
+    font-size: 22px;
+}

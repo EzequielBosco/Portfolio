@@ -1,6 +1,7 @@
 .main-work {
     margin-top: 0;
     height: auto;
+    margin-bottom: 0;
 }
 
 .container-work {
@@ -8,7 +9,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 9px;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .card {
@@ -83,4 +84,10 @@
 .logo-work {
     height: auto;
     width: 40px;
+}
+
+@media (max-width: 767px) {
+    .card {
+        max-width: 90%;
+    }
 }

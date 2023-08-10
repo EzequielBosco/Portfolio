@@ -1,6 +1,7 @@
 :root {
     --color-primary: rgb(4, 3, 5);
     --color-secondary: rgb(2, 2, 2);
+    --color-secondary-nav: rgba(2, 2, 2, 0.89);
     --color-highlight: rgb(92, 103, 163);
     --color-change: rgb(162, 163, 175);
     --color-change-nav-1: rgba(162, 163, 175, 0.945);
@@ -94,6 +95,49 @@ nav {
     backdrop-filter: blur(4px);
 }
 
+#toggle-menu {
+    display: none;
+}
+
+#mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-secondary-nav);
+}
+
+#mobile-menu.active {
+    display: block;
+}
+
+.categories-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #toggle-menu {
+        display: block;
+    }
+
+    #nav ul.categories {
+        display: none;
+    }
+
+    #mobile-menu {
+        border: 1px solid white;
+    }
+
+    .categories-mobile {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .word-color {
     color: var(--color)
 }
@@ -131,7 +175,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    padding-top: 12rem;
+    padding-top: 8rem;
     font-family: 'GFS Didot';
     font-size: 1.8rem;
 }
@@ -148,6 +192,7 @@ main h3 {
 
 .main-index {
     text-align: center;
+    margin-top: 4.5rem;
 }
 
 a {
