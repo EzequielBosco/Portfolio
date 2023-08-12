@@ -11,6 +11,8 @@
     --color-medium-nav: rgba(41, 45, 65, 0.384);
     --color-gradient: linear-gradient(90deg, #817ff0 10%, #e0e2f0 70%);
     --color: rgb(228, 29, 62);
+    --color-work: rgba(228, 29, 62, 0.911);
+    --color-work-off: rgba(228, 29, 62, 0.178);
     --color-button: rgba(224, 29, 61, 0.952);
     --primary: rgba(241, 48, 80, 0.705);
     --color-nav: rgba(223, 223, 223, 0.459);
@@ -51,6 +53,11 @@ header li {
 .nav-item:active {
     animation-name: nav;
     animation-duration: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: var(--color);
 }
 
 .active {
@@ -204,7 +211,7 @@ a {
 a:hover {
     text-decoration: underline;
     text-decoration-color: rgb(228, 226, 226);
-    color: rgb(216, 216, 216);
+    color: rgb(204, 204, 204);
 }
 
 hr {
@@ -355,5 +362,15 @@ hr.final {
         align-items: center;
         justify-content: center;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    footer {
+        background-color: transparent;
+    }
+
+    hr.final {
+        width: 99.5%;
     }
 }
