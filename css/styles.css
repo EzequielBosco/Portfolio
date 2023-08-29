@@ -60,9 +60,37 @@ nav a:hover {
     color: var(--color);
 }
 
-.active {
+.flags {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 30px;
+}
+
+.flags-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flags img {
+    height: 45px;
+    display: block;
+    cursor: pointer;
+}
+
+.flags img:hover {
+    opacity: 0.85;
+}
+
+a .active {
     background-color: rgb(241, 241, 241);
     color: black;
+}
+
+.active span {
+    color: var(--color);
 }
 
 @keyframes nav {
@@ -157,6 +185,7 @@ nav {
 .categories {
     display: flex;
     justify-content: center;
+    align-items: center;
 } 
 
 .my-name {

@@ -19,9 +19,17 @@
                 </div>
                 <button id="toggle-menu">☰</button>
                 <ul class="categories">
-                    <a href="about.html"><li>About</li></a>
-                    <a href="work.html"><li>Work</li></a>
-                    <a href="contact.html"><li>Contact</li></a>
+                    <a href="about.html"><li data-section="nav-categories" data-value="nav-about">About</li></a>
+                    <a href="work.html"><li data-section="nav-categories" data-value="nav-work">Work</li></a>
+                    <a href="contact.html"><li data-section="nav-categories" data-value="nav-contact">Contact</li></a>
+                    <div id="flags" class="flags">
+                        <div class="flags-item" data-language="es">
+                            <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
+                        </div>
+                        <div class="flags-item" data-language="en">
+                            <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
+                        </div>
+                    </div>
                 </ul>
                 <div id="smedia">
                     <a href="https://www.linkedin.com/in/ezequiel-bosco-5925661bb/" target="_blank"><img src="assets/linkedin.png" alt="linkedin"></a>
@@ -38,24 +46,24 @@
             </nav>
         </header>
         <main class="main-index">
-            <h1>Full-Stack Developer</h1>
+            <h1 data-section="main-index" data-value="title">Full-Stack Developer</h1>
             <h3 class="my-name"><span class="word-color">Ezequiel</span> Bosco</h3>
-            <a href="about.html" class="button">Know more about me</a>
-            <p class="typing-effect" data-text="Welcome to My Website"></p>
+            <a href="about.html" class="button" data-section="main-index" data-value="btn-about-me">Know more about me</a>
+            <p class="typing-effect" data-text="Welcome to My Website" data-section="main-index" data-value="typing-text"></p>
         </main>
         <canvas id="canvas"></canvas>
         <div id="particles-js"></div>
         <footer>
             <hr>
             <div class="footer">
-                <h3>FIND ME ON</h3>
+                <h3 data-section="footer" data-value="find">FIND ME ON</h3>
                 <div id="smedia-footer">
                     <a href="https://www.linkedin.com/in/ezequiel-bosco-5925661bb/" target="_blank"><h3>| LINKEDIN |</h3></a>
                     <a href="https://github.com/EzequielBosco" target="_blank"><h3>&nbsp | GITHUB | &nbsp</h3></a>
                     <a href="https://www.instagram.com/ezequiel_bosco/" target="_blank"><h3>| INSTAGRAM |</h3></a>
                 </div>
             </div>
-            <p> &copy; 2023 EZB | All rights reserved.</p>
+            <p> &copy; 2023 EZB | <span data-section="footer" data-value="rights">All rights reserved</span>.</p>
             <hr class="final">
         </footer>
     </div>
@@ -63,6 +71,5 @@
     <script src="js/particlesjs-config.json"></script>
     <script src="js/https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
-    <!-- <script src="js/canvas.js" type="text/javascript"></script> -->
 </body>
 </html>

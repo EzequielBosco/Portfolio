@@ -21,9 +21,17 @@
                 </div>
                 <button id="toggle-menu">☰</button>
                 <ul class="categories">
-                    <a href="about.html"><li>About</li></a>
-                    <a href="work.html"><li>Work</li></a>
-                    <a href="contact.html"><li class="active">Contact</li></a>
+                    <a href="about.html"><li data-section="nav-categories" data-value="nav-about">About</li></a>
+                    <a href="work.html"><li data-section="nav-categories" data-value="nav-work">Work</li></a>
+                    <a href="contact.html"><li class="active" data-section="nav-categories" data-value="nav-contact">Contact</li></a>
+                    <div id="flags" class="flags">
+                        <div class="flags-item" data-language="es">
+                            <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
+                        </div>
+                        <div class="flags-item" data-language="en">
+                            <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
+                        </div>
+                    </div>
                 </ul>
                 <div id="smedia">
                     <a href="https://www.linkedin.com/in/ezequiel-bosco-5925661bb/" target="_blank"><img src="assets/linkedin.png" alt="linkedin"></a>
@@ -43,18 +51,18 @@
             <h3>Get in touch</h3>
             <form class="contact-form">
                 <div class="contact-group">
-                    <label name="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name..." required>
+                    <label name="name" data-section="contact" data-value="contact-name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name..." data-section="contact" data-value="contact-name-ph" required>
                 </div>
                 <div class="contact-group">
-                    <label name="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Emai..." required>
+                    <label name="email" data-section="contact" data-value="contact-email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email..." data-section="contact" data-value="contact-email-ph" required>
                 </div>
                 <div class="contact-group">
-                    <label name="message">Message</label>
-                    <input type="text" name="message" id="message" placeholder="Message...">
+                    <label name="message" data-section="contact" data-value="contact-message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="Message..." data-section="contact" data-value="contact-message-ph">
                 </div>
-                <button type="submit" class="button">Send</button>
+                <button type="submit" class="button" data-section="contact" data-value="contact-btn">Send</button>
             </form>
             <div class="email-link">
                 <a href="mailto:ezequiel_bosco@hotmail.com">Ezequiel_bosco@hotmail.com</a>
@@ -64,14 +72,14 @@
         <footer>
             <hr>
             <div class="footer">
-                <h3>FIND ME ON</h3>
+                <h3 data-section="footer" data-value="find">FIND ME ON</h3>
                 <div id="smedia-footer">
                     <a href="https://www.linkedin.com/in/ezequiel-bosco-5925661bb/" target="_blank"><h3>| LINKEDIN |</h3></a>
                     <a href="https://github.com/EzequielBosco" target="_blank"><h3>&nbsp | GITHUB | &nbsp</h3></a>
                     <a href="https://www.instagram.com/ezequiel_bosco/" target="_blank"><h3>| INSTAGRAM |</h3></a>
                 </div>
             </div>
-            <p> &copy; 2023 EZB | All rights reserved.</p>
+            <p> &copy; 2023 EZB | <span data-section="footer" data-value="rights">All rights reserved</span>.</p>
             <hr class="final">
         </footer>
     </div>

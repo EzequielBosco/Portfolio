@@ -1,0 +1,38 @@
+{
+    "nav-categories": {
+        "nav-about": "Sobre mí",
+        "nav-work": "Trabajos",
+        "nav-contact": "Contacto"
+    },
+    "main-index": {
+        "title":"Desarrollador Full-Stack",
+        "btn-about-me": "Ver más sobre mí",
+        "typing-text": "Bienvenido a mi sitio web"
+    },
+    "footer": {
+        "find": "ENCONTRAME EN",
+        "rights": "Todos los derechos reservados"
+    },
+
+    "main-about": {
+        "text-about": "Me llamo Ezequiel Bosco, tengo 23 años, estudio Desarrollo de Software y vivo en Buenos Aires, Argentina. A través de la programacion, me esfuerzo por resolver problemas implementando soluciones creativas, haciendo foco en el diseño y desarrollo de sitios webs dinámicos.",
+        "btn-about": "Ver mis trabajos"
+    },
+    "section-about": {
+        "skills-about": "Mis habilidades"
+    },
+
+    "work": {
+        "project": "Proyecto personal"
+    },
+
+    "contact": {
+        "contact-name": "Nombre",
+        "contact-name-ph": "Nombre",
+        "contact-email": "Correo",
+        "contact-email-ph": "Correo",
+        "contact-message": "Mensaje",
+        "contact-message-ph": "Mensaje",
+        "contact-btn": "Enviar"
+    }
+}

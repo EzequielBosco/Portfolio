@@ -1,0 +1,38 @@
+{
+    "nav-categories": {
+        "nav-about": "About",
+        "nav-work": "Work",
+        "nav-contact": "Contact"
+    },
+    "main-index": {
+        "title":"Full-Stack Developer",
+        "btn-about-me": "Know more about me",
+        "typing-text": "Welcome to My Website"
+    },
+    "footer": {
+        "find": "FIND ME ON",
+        "rights": "All rights reserved"
+    },
+
+    "main-about": {
+        "text-about": "I'm Ezequiel Bosco, a 23-year-old student of Software Development living in Buenos Aires, Argentina. Through programming, I strive to implement creative problem-solving solutions, with a specific focus on the designing and developing dynamic websites.",
+        "btn-about": "SEE MY WORK"
+    },
+    "section-about": {
+        "skills-about": "My skills"
+    },
+
+    "work": {
+        "project": "Personal project"
+    },
+    
+    "contact": {
+        "contact-name": "Name",
+        "contact-name-ph": "Name",
+        "contact-email": "Email",
+        "contact-email-ph": "Email",
+        "contact-message": "Message",
+        "contact-message-ph": "Message",
+        "contact-btn": "Send"
+    }
+}

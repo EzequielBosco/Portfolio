@@ -144,6 +144,9 @@
 .logo-work {
     height: auto;
     width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {

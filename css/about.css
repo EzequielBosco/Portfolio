@@ -4,10 +4,6 @@ main p {
     color: rgb(231, 227, 227);
 }
 
-.main-about {
-    padding-bottom: 2rem;
-}
-
 .main-about .title {
     font-size: 50px;
 }
@@ -27,6 +23,7 @@ main p {
 
 .info img {
     box-shadow: 1px 1px 4px 2px white;
+    pointer-events: none
 }
 
 #my-info {
@@ -43,6 +40,11 @@ main p {
 
 .personal p {
     margin-top: 0;
+}
+
+#text {
+    font-family: 'Ubuntu';
+    font-size: 22px;
 }
 
 #my-name {
