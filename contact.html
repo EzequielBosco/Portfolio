@@ -47,26 +47,36 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <h3>Get in touch</h3>
-            <form class="contact-form">
-                <div class="contact-group">
-                    <label name="name" data-section="contact" data-value="contact-name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name..." data-section="contact" data-value="contact-name-ph" required>
+        <main class="contact-main">
+            <div class="form-container">
+                <div class="form-inside">
+                    <h3 data-section="contact" data-value="contact-title">Get in touch</h3>
+                    <form class="contact-form">
+                        <div class="contact-group">
+                            <label name="name" data-section="contact" data-value="contact-name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name..." data-section="contact" data-value="contact-name-ph" required>
+                        </div>
+                        <div class="contact-group">
+                            <label name="email" data-section="contact" data-value="contact-email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email..." data-section="contact" data-value="contact-email-ph" required>
+                        </div>
+                        <div class="contact-group">
+                            <label name="message" data-section="contact" data-value="contact-message">Message</label>
+                            <input type="text" name="message" id="message" placeholder="Message..." data-section="contact" data-value="contact-message-ph">
+                        </div>
+                        <button type="submit" class="button" data-section="contact" data-value="contact-btn">Send</button>
+                    </form>
                 </div>
-                <div class="contact-group">
-                    <label name="email" data-section="contact" data-value="contact-email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email..." data-section="contact" data-value="contact-email-ph" required>
-                </div>
-                <div class="contact-group">
-                    <label name="message" data-section="contact" data-value="contact-message">Message</label>
-                    <input type="text" name="message" id="message" placeholder="Message..." data-section="contact" data-value="contact-message-ph">
-                </div>
-                <button type="submit" class="button" data-section="contact" data-value="contact-btn">Send</button>
-            </form>
-            <div class="email-link">
-                <a href="mailto:ezequiel_bosco@hotmail.com">Ezequiel_bosco@hotmail.com</a>
             </div>
+            <aside>
+                <div id="cv">
+                    <h4 id="cv-title">Curriculum Vitae</h4>
+                    <iframe src="/assets/CV.pdf"></iframe>
+                </div>
+                <div class="email-link">
+                    <p>Ezequiel_bosco@hotmail.com</p>
+                </div>
+            </aside>
         </main>
         <div id="particles-js"></div>
         <footer>

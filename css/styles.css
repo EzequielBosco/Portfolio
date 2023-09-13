@@ -12,6 +12,7 @@
     --color-gradient: linear-gradient(90deg, #817ff0 10%, #e0e2f0 70%);
     --color: rgb(228, 29, 62);
     --color-work: rgba(228, 29, 62, 0.911);
+    --color-work-1: rgba(228, 29, 62, 0.644);
     --color-work-off: rgba(228, 29, 62, 0.178);
     --color-button: rgba(224, 29, 61, 0.952);
     --primary: rgba(241, 48, 80, 0.705);

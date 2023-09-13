@@ -27,6 +27,7 @@
     },
     
     "contact": {
+        "contact-title": "Get in touch",
         "contact-name": "Name",
         "contact-name-ph": "Name",
         "contact-email": "Email",

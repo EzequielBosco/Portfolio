@@ -60,6 +60,11 @@ main p {
     align-items: center;
     flex-basis: calc(100% / 7 - 20px);
     flex-grow: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.skill-card-container:hover {
+    transform: scale(1.05);
 }
 
 
@@ -112,6 +117,12 @@ main p {
     margin-bottom: 2rem;
 }
 
+
+@media screen and (min-width: 1080px) {
+    .section-about .skills {
+        margin-bottom: 3.1rem;
+    }
+}
 
 @media screen and (max-width: 919px) {
     .info img {
