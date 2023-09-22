@@ -83,6 +83,7 @@
     vertical-align: bottom;
     transition: 0.6s ease;
     object-fit: cover;
+    pointer-events: none
 }
 
 .card:hover {
