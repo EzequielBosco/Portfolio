@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fade">
     <div class="container">
         <header>
             <nav id="nav">
@@ -24,13 +24,23 @@
                     <a href="about.html"><li data-section="nav-categories" data-value="nav-about">About</li></a>
                     <a href="work.html"><li class="active" data-section="nav-categories" data-value="nav-work">Work</li></a>
                     <a href="contact.html"><li data-section="nav-categories" data-value="nav-contact">Contact</li></a>
-                    <div id="flags" class="flags">
+                    <!-- <div id="flags" class="flags">
                         <div class="flags-item" data-language="es">
                             <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
                         </div>
                         <div class="flags-item" data-language="en">
                             <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
                         </div>
+                    </div> -->
+                    <div class="checkbox-div">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                          <span class="switch-x-text"></span>
+                          <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel"></span> <img src="/assets/eeuu.png" alt="Logo EEUU"></span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel"></span> <img src="/assets/argentina.png" alt="Logo Argentina"></span>
+                          </span>
+                        </label>
                     </div>
                 </ul>
                 <div id="smedia">
@@ -87,6 +97,48 @@
                 </div>
                 <div class="card">
                     <div class="container-img">
+                        <a href="https://blog-rw86.onrender.com/" target="_blank">
+                            <div class="image-overlay">
+                                <img src="./assets/blog.png" alt="image blog independiente web">
+                                <div class="overlay-text">
+                                    <div class="container-logo">
+                                        <div class="logo-work">
+                                            <img src="assets/htmllogo.png" alt="HTML logo">
+                                        </div>
+                                        <div class="logo-work">
+                                            <img src="assets/csslogo.png" alt="CSS logo">
+                                        </div>
+                                        <div class="logo-work">
+                                            <img src="assets/bootstraplogo.png" alt="Bootstrap logo">
+                                        </div>
+                                        <div class="logo-work">
+                                            <img src="assets/jslogo.png" alt="Js logo">
+                                        </div>
+                                        <div class="logo-work">
+                                            <img src="assets/node-logo.png" alt="Node logo">
+                                        </div>
+                                        <div class="logo-work">
+                                            <img src="assets/expressjs_logo.png" alt="Express logo">
+                                        </div>
+                                    </div>
+                                    <p>EPICA, Argentina Programa 4.0</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="container-card">
+                        <div class="left">
+                            <p>BLOG INDEPENDIENTE</p>
+                        </div>
+                        <div class="right">
+                            <a class="button" href="https://github.com/EzequielBosco/21523A-Ezequiel-Bosco-BLOG" target="_blank">
+                                &lt;/&gt;
+                            </a>                    
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container-img">
                         <a href="https://radiohead-band.netlify.app//" target="_blank">
                             <div class="image-overlay">
                                 <img src="./assets/radiohead.png" alt="image radiohead web">
@@ -99,7 +151,7 @@
                                             <img src="assets/csslogo.png" alt="CSS logo">
                                         </div>
                                         <div class="logo-work">
-                                            <img src="assets/bootstraplogo.png" alt="Bootstra plogo">
+                                            <img src="assets/bootstraplogo.png" alt="Bootstrap logo">
                                         </div>
                                     </div>
                                     <p>Coderhouse</p>

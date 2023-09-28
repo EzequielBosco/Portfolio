@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fade">
     <div class="container">
         <header>
             <nav id="nav">
@@ -24,13 +24,23 @@
                     <a href="about.html"><li class="active" data-section="nav-categories" data-value="nav-about">About</li></a>
                     <a href="work.html"><li data-section="nav-categories" data-value="nav-work">Work</li></a>
                     <a href="contact.html"><li data-section="nav-categories" data-value="nav-contact">Contact</li></a>
-                    <div id="flags" class="flags">
+                    <!-- <div id="flags" class="flags">
                         <div class="flags-item" data-language="es">
                             <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
                         </div>
                         <div class="flags-item" data-language="en">
                             <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
                         </div>
+                    </div> -->
+                    <div class="checkbox-div">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                          <span class="switch-x-text"></span>
+                          <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel"></span><img src="/assets/eeuu.png" alt="Logo EEUU"></span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel"></span><img src="/assets/argentina.png" alt="Logo Argentina"></span>
+                          </span>
+                        </label>
                     </div>
                 </ul>
                 <div id="smedia">
@@ -44,13 +54,24 @@
                         <a href="work.html"><li>Work</li></a>
                         <a href="contact.html"><li>Contact</li></a>
                     </ul>
-                    <div id="flags" class="flags">
+                    <!-- <div id="flags" class="flags">
                         <div class="flags-item" data-language="es">
                             <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
                         </div>
                         <div class="flags-item" data-language="en">
                             <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
                         </div>
+                    </div> -->
+                    <div class="checkbox-div">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                          <!-- <span class="switch-x-text">This is </span> -->
+                          <span class="switch-x-text"></span>
+                          <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel"></span><img src="/assets/eeuu.png" height="20px" alt="Logo EEUU"></span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel"></span><img src="/assets/argentina.png" height="20px" alt="Logo Argentina"></span>
+                          </span>
+                        </label>
                     </div>
                 </div>
             </nav>
@@ -58,13 +79,16 @@
         <main class="main-about">
             <div id="my-info">
                 <div class="info">
-                    <img src="assets/about-1.jpg" height="300px">
+                    <img class="perfil-img" src="assets/about-1.jpg">
                     <div class="personal">
-                        <p class="title"><strong class="word-color">Ezequiel </strong>Bosco</p>
-                        <div>
-                            <p id="text" data-section="main-about" data-value="text-about">I'm <strong>Ezequiel Bosco</strong>, a 23-year-old student of Software Development living in Buenos Aires, Argentina. Through programming, I strive to implement creative problem-solving solutions, with a specific focus on dynamic website design and development.</p>
-                            <a href="work.html" class="button" data-section="main-about" data-value="btn-about">see My work</a>
+                        <h1><strong class="word-color">Ezequiel </strong>Bosco</h1>
+                        <div class="div-text">
+                            <p id="text" data-section="main-about" data-value="text-about">I'm <strong>Ezequiel Bosco</strong>, a 23-year-old student of Software Development living in Buenos Aires, Argentina. Through programming, I strive to implement creative problem-solving solutions, with a specific focus on dynamic website design and development. </p>
+                            <div id="follow-about">
+                                <small data-section="main-about" data-value="follow-about">Follow me on</small> <a href="https://www.linkedin.com/in/ezequiel-bosco/" target="_blank"><img class="linkedin-about" src="assets/linkedin.png" alt="linkedin"></a>
+                            </div>
                         </div>
+                        <a href="work.html" class="button see-work" data-section="main-about" data-value="btn-about">see My work</a>
                     </div>
                 </div>
             </div>

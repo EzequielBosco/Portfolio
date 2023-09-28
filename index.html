@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fade">
     <div class="container">
         <header>
             <nav id="nav">
@@ -22,13 +22,23 @@
                     <a href="about.html"><li data-section="nav-categories" data-value="nav-about">About</li></a>
                     <a href="work.html"><li data-section="nav-categories" data-value="nav-work">Work</li></a>
                     <a href="contact.html"><li data-section="nav-categories" data-value="nav-contact">Contact</li></a>
-                    <div id="flags" class="flags">
+                    <!-- <div id="flags" class="flags">
                         <div class="flags-item" data-language="es">
                             <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
                         </div>
                         <div class="flags-item" data-language="en">
                             <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
                         </div>
+                    </div> -->
+                    <div class="checkbox-div">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                          <span class="switch-x-text"></span>
+                          <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel"></span><img src="/assets/eeuu.png" alt="Logo EEUU"></span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel"></span><img src="/assets/argentina.png" alt="Logo Argentina"></span>
+                          </span>
+                        </label>
                     </div>
                 </ul>
                 <div id="smedia">
@@ -47,7 +57,7 @@
         </header>
         <main class="main-index">
             <h1 data-section="main-index" data-value="title">Full-Stack Developer</h1>
-            <h3 class="my-name"><span class="word-color">Ezequiel</span> Bosco</h3>
+            <h2 class="my-name"><span class="word-color">Ezequiel</span> Bosco</h2>
             <a href="about.html" class="button" data-section="main-index" data-value="btn-about-me">Know more about me</a>
             <p class="typing-effect" data-text="Welcome to My Website" data-section="main-index" data-value="typing-text"></p>
         </main>

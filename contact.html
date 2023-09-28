@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 </head>
-<body class="body-contact">
+<body class="body-contact fade">
     <div class="container">
         <header>
             <nav id="nav">
@@ -24,13 +24,23 @@
                     <a href="about.html"><li data-section="nav-categories" data-value="nav-about">About</li></a>
                     <a href="work.html"><li data-section="nav-categories" data-value="nav-work">Work</li></a>
                     <a href="contact.html"><li class="active" data-section="nav-categories" data-value="nav-contact">Contact</li></a>
-                    <div id="flags" class="flags">
+                    <!-- <div id="flags" class="flags">
                         <div class="flags-item" data-language="es">
                             <img src="assets/argentina.png" alt="Logo Argentina"><span>Es</span>
                         </div>
                         <div class="flags-item" data-language="en">
                             <img src="assets/eeuu.png" alt="Logo EEUU"><span>En</span>
                         </div>
+                    </div> -->
+                    <div class="checkbox-div">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                          <span class="switch-x-text"></span>
+                          <span class="switch-x-toggletext">
+                            <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel"></span><img src="/assets/eeuu.png" alt="Logo EEUU"></span>
+                            <span class="switch-x-checked"><span class="switch-x-hiddenlabel"></span><img src="/assets/argentina.png" alt="Logo Argentina"></span>
+                          </span>
+                        </label>
                     </div>
                 </ul>
                 <div id="smedia">
@@ -50,8 +60,8 @@
         <main class="contact-main">
             <div class="form-container">
                 <div class="form-inside">
-                    <h3 data-section="contact" data-value="contact-title">Get in touch</h3>
-                    <form class="contact-form">
+                    <h2 data-section="contact" data-value="contact-title">Get in touch</h2>
+                    <form class="contact-form" id="contact-form">
                         <div class="contact-group">
                             <label name="name" data-section="contact" data-value="contact-name">Name</label>
                             <input type="text" name="name" id="name" placeholder="Name..." data-section="contact" data-value="contact-name-ph" required>
@@ -93,6 +103,8 @@
             <hr class="final">
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/particlesjs-config.json"></script>
     <script src="js/https://code.jquery.com/jquery-3.6.0.min.js"></script>
