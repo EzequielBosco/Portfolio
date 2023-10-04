@@ -123,7 +123,7 @@ if (savedLanguage) {
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.body.classList.remove('fade')
-    }, 600)
+    }, 400)
 })
 
 
