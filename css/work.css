@@ -159,4 +159,7 @@
     .card {
         max-width: 90%;
     }
+    .logo-work {
+        width: 30px;
+    }
 }

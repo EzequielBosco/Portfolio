@@ -7,7 +7,7 @@
     "main-index": {
         "title":"Full-Stack Developer",
         "btn-about-me": "Know more about me",
-        "typing-text": "Welcome to My Website"
+        "typing-text": "Welcome to my Website"
     },
     "footer": {
         "find": "FIND ME ON",
@@ -15,7 +15,7 @@
     },
 
     "main-about": {
-        "text-about": "I'm Ezequiel Bosco, a 23-year-old student of Software Development living in Buenos Aires, Argentina. Through programming, I strive to implement creative problem-solving solutions, with a specific focus on dynamic website design and development.",
+        "text-about": "I'm Ezequiel Bosco, a 23-year-old student of Software Development living in Buenos Aires, Argentina. Through programming, I strive to implement creative problem-solving solutions, with a specific focus on designing and developing dynamic websites using React and Node JS.",
         "btn-about": "SEE MY WORK",
         "follow-about": "Follow me on"
     },

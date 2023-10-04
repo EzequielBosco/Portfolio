@@ -15,7 +15,7 @@
     },
 
     "main-about": {
-        "text-about": "Me llamo Ezequiel Bosco, tengo 23 años, estudio Desarrollo de Software y vivo en Buenos Aires, Argentina. A través de la programacion, me esfuerzo por resolver problemas implementando soluciones creativas, actualmente estoy enfocado en el diseño y desarrollo de sitios webs dinámicos.",
+        "text-about": "Me llamo Ezequiel Bosco, tengo 23 años, estudio Desarrollo de Software y vivo en Buenos Aires, Argentina. A través de la programacion, me esfuerzo por resolver problemas implementando soluciones creativas, actualmente estoy enfocado en el diseño y desarrollo de sitios web dinámicos con React y Node JS.",
         "btn-about": "Ver mis trabajos",
         "follow-about": "Seguime en"
     },

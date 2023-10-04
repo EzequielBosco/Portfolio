@@ -64,6 +64,7 @@ main p {
 #text {
     font-family: 'Ubuntu';
     font-size: 22px;
+    text-wrap: balance;
 }
 
 .personal img {

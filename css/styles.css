@@ -87,47 +87,15 @@ nav a:hover {
     color: var(--color);
 }
 
-.flags {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    height: 30px;
-}
-
-.flags-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.flags img {
-    height: 45px;
-    display: block;
-    cursor: pointer;
-}
-
-.flags img:hover {
-    opacity: 0.85;
-}
-
 /* FLAGS */
 .checkbox-div .switch {
     display: none;
   }
   
   .checkbox-div .switch + label {
-    /* -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center; */
     color: #e3e3e7;
     cursor: pointer;
-    /* display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox; */
     display: flex;
-    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-size: 12px;
     line-height: 15px;
     position: relative;
@@ -170,14 +138,8 @@ nav a:hover {
     width: 13px;
 }
   
-/* .checkbox-div .switch + label .switch-x-text {
-    display: block;
-    margin-right: .3em;
-} */
-  
 .checkbox-div .switch + label .switch-x-toggletext {
     display: block;
-    font-weight: bold;
     height: 15px;
     overflow: hidden;
     position: relative;
@@ -286,6 +248,10 @@ nav {
 
 #toggle-menu {
     display: none;
+}
+
+button#toggle-menu {
+    padding: 5px 15px 5px 15px;
 }
 
 #mobile-menu {
@@ -556,5 +522,9 @@ button {
 
     h1 {
         font-size: 55px;
+    }
+
+    .checkbox-div label {
+        width: 60px;
     }
 }

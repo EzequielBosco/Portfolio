@@ -91,12 +91,14 @@ const changeLanguage = async language => {
 }
 
 const switchInput = document.getElementById("switch")
+const switchInputMobile = document.getElementById("switch-m")
 const switchLabel = document.querySelector(".checkbox-div label")
 const textChange = document.querySelectorAll("[data-section]")
 
 const savedSwitchState = localStorage.getItem('languageSwitchState')
 if (savedSwitchState !== null) {
     switchInput.checked = savedSwitchState === "true";
+    switchInputMobile.checked = savedSwitchState === "true";
 }
 
 const switchState = switchInput.checked
@@ -112,6 +114,17 @@ switchInput.addEventListener("change", () => {
     // Cambiar el texto
     const switchXText = document.querySelector(".switch-x-text")
     switchXText.textContent = `${newLanguage.toUpperCase()}` + " "
+})
+
+switchInputMobile.addEventListener("change", () => {
+    const newLanguage = switchInputMobile.checked ? "es" : "en"
+    changeLanguage(newLanguage)
+
+    localStorage.setItem('languageSwitchState', switchInputMobile.checked.toString())
+
+    // Cambiar el texto
+    const switchXTextMobile = document.querySelector(".switch-x-text")
+    switchXTextMobile.textContent = `${newLanguage.toUpperCase()}` + " "
 })
 
 const savedLanguage = localStorage.getItem('language')
