@@ -188,5 +188,8 @@ const alert = () => {
         icon: 'success',
         title: 'Enviado',
         showCancelButton: false,
+        showConfirmButton: false,
+        timer: 2500
     })
+    Swal.getTimerLeft()
 }
