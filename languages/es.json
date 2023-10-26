@@ -24,7 +24,9 @@
     },
 
     "work": {
-        "project": "Proyecto personal"
+        "project-chat": "Chat Websockets",
+        "project-piano": "Piano Virtual",
+        "project-count": "Contador de puntos"
     },
 
     "contact": {
