@@ -310,6 +310,7 @@ button#toggle-menu {
 
 .my-name {
     opacity: 95%;
+    font-size: 100px;
 }
 
 #smedia {
@@ -482,22 +483,27 @@ button {
     text-decoration: none;
 }
 
-.typing-effect {
+.float-effect {
+    margin-top: 2rem;
     font-size: 20px;
     border-right: 2px solid #585858;
     white-space: pre;
     overflow: hidden;
     padding: 8px;
-    animation: typing 2s steps(15, end), blink-caret 0.75s steps(1, end) 2s infinite;
+    animation: float-effect 3s ease-in-out infinite;
     display: flex;
     justify-content: center;
     color: var(--primary);
     opacity: 90%;
 }
   
-@keyframes typing {
-    from { width: 0 }
-    to { width: 20% }
+@keyframes float-effect {
+    0%, 100% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
 }
 
 @keyframes blink-caret {

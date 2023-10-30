@@ -23,30 +23,6 @@ function checkStickyNav() {
 
 window.addEventListener('scroll', checkStickyNav)
 
-//-------------------------
-// TEXTO
-document.addEventListener("DOMContentLoaded", function () {
-	const typingElement = document.querySelector(".typing-effect")
-	const text = typingElement.getAttribute("data-text")
-	
-    const savedLanguage = localStorage.getItem("language")
-
-    if (!savedLanguage) {
-        
-        currentText = ""
-        let i = 0
-        const typingInterval = setInterval(function () {
-            currentText += text.charAt(i)
-            typingElement.innerText += currentText.charAt(i)
-            i++
-            if (i >= text.length) {
-                clearInterval(typingInterval)
-            }}, 100)
-        } else {
-            changeLanguage(savedLanguage)
-    }
-})
-
 // ------------------------------------------------------
 // SCROLL
 document.addEventListener('DOMContentLoaded', function() {
