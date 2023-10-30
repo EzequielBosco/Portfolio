@@ -21,8 +21,12 @@ main p {
 .info img {
     height: 380px;
     border-radius: 8px;
-    box-shadow: 1px 1px 4px 1px rgba(145, 145, 145, 0.83);
+    box-shadow: 1px 1px 2px 1px rgba(170, 170, 170, 0.83);
     pointer-events: none
+}
+
+.info .perfil-img {
+    border-radius: 18px;
 }
 
 #my-info {
@@ -50,7 +54,6 @@ main p {
     margin: 0;
     padding: 0 0 20px 0;
     font-size: 75px;
-    position: absolute;
 }
 
 .personal p {
@@ -68,7 +71,6 @@ main p {
     font-weight: 400;
     font-size: 23px;
     text-wrap: balance;
-    margin-top: 6rem;
 }
 
 .personal img {
@@ -166,7 +168,7 @@ main p {
     }
 }
 
-@media screen and (max-width: 1139px) {
+@media screen and (max-width: 1137px) {
     .info .perfil-img {
         max-width: 50%;
         height: auto;
@@ -193,11 +195,5 @@ main p {
         height: 20px;
         padding: 5px;
         transition: 0.3s ease;
-    }
-}
-
-@media screen and (max-width: 606px) {
-    #text {
-        margin-top: 12rem;
     }
 }

@@ -92,6 +92,10 @@ nav a:hover {
 .checkbox-div .switch {
     display: none;
   }
+
+  .checkbox-div span {
+    font-size: 14px;
+  }
   
   .checkbox-div .switch + label {
     color: #e3e3e7;
