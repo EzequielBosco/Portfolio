@@ -85,7 +85,7 @@ aside {
 
 iframe {
     width: 19rem;
-    height: 28rem;
+    height: 29rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,6 +99,11 @@ iframe {
 
     aside {
         width: 100%;
+    }
+
+    iframe {
+        width: 15rem;
+        height: 20rem;
     }
 }
 

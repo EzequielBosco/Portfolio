@@ -48,7 +48,9 @@ main p {
 
 .personal h1 {
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
+    font-size: 75px;
+    position: absolute;
 }
 
 .personal p {
@@ -62,9 +64,11 @@ main p {
 }
 
 #text {
-    font-family: 'Ubuntu';
-    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
     text-wrap: balance;
+    margin-top: 6rem;
 }
 
 .personal img {
@@ -189,5 +193,11 @@ main p {
         height: 20px;
         padding: 5px;
         transition: 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 606px) {
+    #text {
+        margin-top: 12rem;
     }
 }
