@@ -89,6 +89,10 @@ nav a:hover {
 }
 
 /* FLAGS */
+.checkbox-div {
+    padding: 6px;
+}
+
 .checkbox-div .switch {
     display: none;
   }
@@ -526,11 +530,24 @@ button {
 
 @media screen and (max-width: 767px) {
     footer {
-        background-color: transparent;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0));
+    }
+
+    .container-card .button {
+        font-size: 16px;
+    }
+
+    .my-name {
+        font-size: 75px;
     }
 
     h1 {
         font-size: 55px;
+    }
+
+    .main-index {
+        padding-top: 6.5rem;
+        padding-bottom: 4rem;
     }
 
     .checkbox-div label {

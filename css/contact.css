@@ -48,7 +48,7 @@ form label {
     justify-content: space-between;
     align-items: flex-start;
     gap: 15px;
-    padding: 6rem;
+    padding: 4rem;
 }
 
 .form-container {
@@ -92,13 +92,21 @@ iframe {
     .contact-main {
         flex-direction: column;
     }
+    .contact-main h2 {
+        font-size: 40px;
+    }
+    .contact-form {
+        margin: 0rem;
+    }
     .form-container {
-        width: 100%;
+        display: flex;
+        align-items: center;
+        width: 94%;
         align-items: center;
     }
 
     aside {
-        width: 100%;
+        width: 98%;
     }
 
     iframe {

@@ -24,6 +24,7 @@
     align-items: center;
     width: 100%;
     opacity: 85%;
+    padding: 4px;
 }
 
 .container-card button a {
@@ -159,6 +160,9 @@
 @media (max-width: 767px) {
     .card {
         max-width: 90%;
+    }
+    .left p {
+        font-size: 19px;
     }
     .logo-work {
         width: 30px;
