@@ -15,7 +15,7 @@
     },
 
     "main-about": {
-        "text-about": "Tengo 24 años, estudio Desarrollo de Software y vivo en Buenos Aires, Argentina. Soy creativo, curioso y autodidacta, a través de la programacion resuelvo problemas implementando soluciones creativas, actualmente estoy enfocado en el diseño y desarrollo de sitios web dinámicos con React y Node JS.",
+        "text-about": "Tengo 24 años, estudio Desarrollo de Software, me especializo en FrontEnd y vivo en Buenos Aires, Argentina. Soy creativo, curioso y autodidacta, a través de la programacion resuelvo problemas implementando soluciones creativas, actualmente estoy enfocado en el diseño y desarrollo de sitios web dinámicos con React y Node JS.",
         "btn-contact": "CONTACTO",
         "follow-about": "Seguime en"
     },

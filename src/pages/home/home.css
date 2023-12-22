@@ -1,0 +1,55 @@
+.float-effect {
+    margin-top: 2rem;
+    font-size: 20px;
+    white-space: pre;
+    overflow: hidden;
+    padding: 8px;
+    animation: float-effect 3s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    opacity: 90%;
+}
+  
+@keyframes float-effect {
+    0%, 100% {
+        transform: translateY(0px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #333 }
+}
+
+@media (min-width: 1240px) {
+    .main-index {
+        text-align: center;
+        padding-top: 15rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-card .button {
+        font-size: 16px;
+    }
+
+    .my-name {
+        font-size: 50px;
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .main-index {
+        padding-top: 6.5rem;
+        padding-bottom: 4rem;
+    }
+    .main-index h2 {
+        font-size: 28px;
+    }
+}

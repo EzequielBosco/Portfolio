@@ -53,7 +53,7 @@ main p {
 .personal h1 {
     margin: 0;
     padding: 0 0 20px 0;
-    font-size: 75px;
+    font-size: 60px;
 }
 
 .personal p {
@@ -81,10 +81,6 @@ main p {
 
 .div-text a:hover {
     transform:translateX(2px)
-}
-
-.see-work {
-    display: block;
 }
 
 #my-name {
@@ -197,6 +193,6 @@ main p {
         transition: 0.3s ease;
     }
     .info .personal h1 {
-        font-size: 60px;
+        font-size: 50px;
     }
 }

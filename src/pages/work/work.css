@@ -1,7 +1,7 @@
 .main-work {
     margin-top: 0;
     height: auto;
-    margin-bottom: 0;
+    margin-bottom: 5rem;
 }
 
 .container-img {
@@ -24,7 +24,10 @@
     align-items: center;
     width: 100%;
     opacity: 85%;
-    padding: 4px;
+    padding-bottom: 4px;
+}
+.container-card a {
+    padding: 0;
 }
 
 .container-card button a {
