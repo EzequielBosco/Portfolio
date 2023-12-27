@@ -69,21 +69,21 @@ const Contact = () => {
         <main className="contact-main">
             <div className="form-container">
                 <div className="form-inside">
-                    <h2 data-section="contact" data-value="contact-title">{t("contact.contact-title")}</h2>
+                    <h2>{t("contact.contact-title")}</h2>
                     <form className="contact-form" id="contact-form" onSubmit={handleSubmitForm}>
                         <div className="contact-group">
-                            <label name="name" data-section="contact" data-value="contact-name">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Name..." data-section="contact" data-value="contact-name-ph" required onChange={handleInputChange} />
+                            <label name="name">{t("contact.contact-name")}</label>
+                            <input type="text" name="name" id="name" placeholder={t("contact.contact-name-ph")} required onChange={handleInputChange} />
                         </div>
                         <div className="contact-group">
-                            <label name="email" data-section="contact" data-value="contact-email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email..." data-section="contact" data-value="contact-email-ph" required onChange={handleInputChange} />
+                            <label name="email">{t("contact.contact-email")}</label>
+                            <input type="email" name="email" id="email" placeholder={t("contact.contact-email-ph")} required onChange={handleInputChange} />
                         </div>
                         <div className="contact-group">
-                            <label name="message" data-section="contact" data-value="contact-message">Message</label>
-                            <input type="text" name="message" id="message" placeholder="Message..." data-section="contact" data-value="contact-message-ph" onChange={handleInputChange} />
+                            <label name="message">{t("contact.contact-message")}</label>
+                            <input type="text" name="message" id="message" placeholder={t("contact.contact-message-ph")} onChange={handleInputChange} />
                         </div>
-                        <button type="submit" data-section="contact" data-value="contact-btn">Send</button>
+                        <button type="submit">{t("contact.contact-btn")}</button>
                     </form>
                 </div>
             </div>

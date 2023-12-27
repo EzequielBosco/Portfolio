@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 import './footer.css'
 
 const Footer = () => {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [t, i18n] = useTranslation("global")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,16 +33,14 @@ const Footer = () => {
       <footer className={footerClassName}>
         <hr />
         <div className="footer">
-            <h3 data-section="footer" data-value="find">FIND ME ON</h3>
+            <h3>{t("footer.find")}</h3>
             <div id="smedia-footer">
-                <Link to="https://www.linkedin.com/in/ezequiel-bosco/" target="_blank"><h3>| LINKEDIN |</h3></Link>
-                -
-                <Link to="https://github.com/EzequielBosco" target="_blank"><h3>| GITHUB |</h3></Link>
-                -
-                <Link to="https://www.instagram.com/ezequiel_bosco/" target="_blank"><h3>| INSTAGRAM |</h3></Link>
+                <Link to="https://www.linkedin.com/in/ezequiel-bosco/" target="_blank"><img src="./linkedin.png" alt="Linkedin Ezequiel Bosco" /></Link>
+                <Link to="https://github.com/EzequielBosco" target="_blank"><img src="./github.png" alt="Github Ezequiel Bosco" /></Link>
+                <Link to="https://www.instagram.com/ezequiel_bosco/" target="_blank"><img src="./instagram.png" alt="Instagram Ezequiel Bosco" /></Link>
             </div>
         </div>
-        <p> &copy; 2023 | Ezequiel Bosco | <span data-section="footer" data-value="rights">All rights reserved</span>.</p>
+        <p> &copy; 2023 | Ezequiel Bosco | <span>{t("footer.rights")}</span>.</p>
         <hr className="final" />
       </footer>
     </>

@@ -1,9 +1,11 @@
 import { usePageLoadContext } from '../../context/PageLoadContext'
 import { Link } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 import "./about.css"
 
 const About = () => {
   const { isPageLoaded } = usePageLoadContext()
+  const [t, i18n] = useTranslation("global")
 
   return (
     <div className={`fade ${isPageLoaded ? 'loaded' : ''}`}>
@@ -15,18 +17,18 @@ const About = () => {
                     <div className="personal">
                         <div className="div-text">
                             <h1><strong className="word-color">Ezequiel </strong>Bosco</h1>
-                            <p id="text" data-section="main-about" data-value="text-about">A creative and curious 24-year-old student of Software Development living in Buenos Aires, Argentina. Through programming i implement creative problem-solving solutions with a focus on designing and developing dynamic websites using React and Node JS. </p>
+                            <p id="text">{t("about.text-about")}</p>
                             <div id="follow-about">
-                                <small data-section="main-about" data-value="follow-about">Follow me on</small> <Link to="https://www.linkedin.com/in/ezequiel-bosco/" target="_blank"><img src="./linkedin.png" alt="linkedin" /></Link>
+                                <small>{t("about.follow-about")}</small> <Link to="https://www.linkedin.com/in/ezequiel-bosco/" target="_blank"><img src="./linkedin.png" alt="linkedin" /></Link>
                             </div>
                         </div>
-                        <Link to="/contact" data-section="main-about" data-value="btn-contact"><button>CONTACT</button></Link>
+                        <Link to="/contact"><button>{t("about.btn-contact-about")}</button></Link>
                     </div>
                 </div>
             </div>
             <section className="section-about">
                 <div className="skills">
-                    <h3 data-section="section-about" data-value="skills-about">My Skills</h3>
+                    <h3>{t("about.skills-about")}</h3>
                     <hr />
                     <div className="skill-container">
                         <div className="skill-card-container">

@@ -72,6 +72,12 @@ ul {
     list-style: none;
     font-size: 18px;
 }
+ul.categories a.active {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    border-radius: 10px;
+}
 
 /* FLAGS */
 .checkbox-div {
@@ -245,6 +251,7 @@ nav {
 
 #smedia img {
     width: 25px;
+    transition: 0.15s ease-in-out;
 }
 
 #smedia img:hover {

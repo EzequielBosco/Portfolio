@@ -1,9 +1,11 @@
 import { usePageLoadContext } from '../../context/PageLoadContext'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import "./work.css"
 
 const Work = () => {
   const { isPageLoaded } = usePageLoadContext()
+  const [t, i18n] = useTranslation("global")
 
   return (
     <div className={`fade ${isPageLoaded ? 'loaded' : ''}`}>
@@ -67,9 +69,6 @@ const Work = () => {
                                         </div>
                                         <div className="logo-work">
                                             <img src="./node-logo.png" alt="Node logo" />
-                                        </div>
-                                        <div className="logo-work">
-                                            <img src="./expressjs_logo.png" alt="Express logo" />
                                         </div>
                                     </div>
                                     <p>Clon Mercadolibre</p>
@@ -190,9 +189,6 @@ const Work = () => {
                                         <div className="logo-work">
                                             <img src="./node-logo.png" alt="Node logo" />
                                         </div>
-                                        <div className="logo-work">
-                                            <img src="./expressjs_logo.png" alt="Express logo" />
-                                        </div>
                                     </div>
                                     <p>EPICA, Argentina Programa 4.0</p>
                                     <p>Backend</p>
@@ -310,11 +306,8 @@ const Work = () => {
                                         <div className="logo-work">
                                             <img src="./node-logo.png" alt="Node logo" />
                                         </div>
-                                        <div className="logo-work">
-                                            <img src="./expressjs_logo.png" alt="Express logo" />
-                                        </div>
                                     </div>
-                                    <p data-section="work" data-value="project-chat">Personal project Chat Websockets</p>
+                                    <p>Chat Websockets</p>
                                 </div>
                             </div>
                         </Link>
@@ -350,9 +343,6 @@ const Work = () => {
                                         </div>
                                         <div className="logo-work">
                                             <img src="./node-logo.png" alt="Node logo" />
-                                        </div>
-                                        <div className="logo-work">
-                                            <img src="./expressjs_logo.png" alt="Express logo" />
                                         </div>
                                         <div className="logo-work">
                                             <img src="./toastifylogo.png" alt="Toastify Logo" />
@@ -437,7 +427,7 @@ const Work = () => {
                                             <img src="./jslogo.png" alt="Js logo" />
                                         </div>
                                     </div>
-                                    <p data-section="work" data-value="project-count">Personal project</p>
+                                    <p>{t("work.project-count")}</p>
                                 </div>
                             </div>
                         </Link>
@@ -472,7 +462,7 @@ const Work = () => {
                                             <img src="./jslogo.png" alt="Bootstrap logo" />
                                         </div>
                                     </div>
-                                    <p data-section="work" data-value="project-piano">Virtual Piano</p>
+                                    <p>{t("work.project-piano")}</p>
                                 </div>
                             </div>
                         </Link>

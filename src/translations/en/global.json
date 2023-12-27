@@ -4,7 +4,7 @@
         "nav-work": "Work",
         "nav-contact": "Contact"
     },
-    "main-index": {
+    "index": {
         "title":"Full-Stack Developer",
         "btn-work": "SEE MY WORK",
         "typing-text": "Welcome to my Website"
@@ -14,17 +14,14 @@
         "rights": "All rights reserved"
     },
 
-    "main-about": {
+    "about": {
         "text-about": "A creative and curious 24-year-old student of Software Development living in Buenos Aires, Argentina. Through programming i implement creative problem-solving solutions with a focus on designing and developing dynamic websites using React and Node JS.",
-        "btn-contact": "CONTACT",
-        "follow-about": "Follow me on"
-    },
-    "section-about": {
+        "follow-about": "Follow me on",
+        "btn-contact-about": "CONTACT",
         "skills-about": "My skills"
     },
 
     "work": {
-        "project-chat": "Chat Websockets",
         "project-piano": "Virtual Piano",
         "project-count": "Points Counter"
     },
@@ -32,11 +29,11 @@
     "contact": {
         "contact-title": "Get in touch",
         "contact-name": "Name",
-        "contact-name-ph": "Name",
+        "contact-name-ph": "Your name...",
         "contact-email": "Email",
-        "contact-email-ph": "Email",
+        "contact-email-ph": "Your email...",
         "contact-message": "Message",
-        "contact-message-ph": "Message",
+        "contact-message-ph": "Message...",
         "contact-btn": "Send"
     }
 }
