@@ -95,18 +95,18 @@ iframe {
     .contact-main h2 {
         font-size: 40px;
     }
-    .contact-form {
-        margin: 0rem;
+    .form-inside {
+        margin: 0 2rem;
     }
     .form-container {
         display: flex;
         align-items: center;
-        width: 94%;
+        width: 100%;
         align-items: center;
     }
 
     aside {
-        width: 98%;
+        width: 100%;
     }
 
     iframe {
