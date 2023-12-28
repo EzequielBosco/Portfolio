@@ -31,7 +31,6 @@ html, body {
     opacity: 1;
     transition: opacity 0.4s ease-in-out;
     font-family: 'Raleway', sans-serif;
-    background-color: var(--color-primary);
 }
 
 #root {
@@ -87,9 +86,6 @@ main h3 {
     text-align: center;
     padding-top: 12rem;
 }
-.main-index h2 {
-    font-size: 35px;
-}
 
 a {
     text-decoration: none;
@@ -125,6 +121,7 @@ canvas {
     height: calc(100%);
     top: 0;
     z-index: -1;
+    color: #E41D3E;
     background: var(--color-primary);
 }
 

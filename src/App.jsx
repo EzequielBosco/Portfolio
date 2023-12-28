@@ -5,7 +5,6 @@ import About from './pages/about'
 import Contact from './pages/contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
-// import ParticlesBack from './components/Particles'
 import { PageLoadProvider } from './context/PageLoadContext'
 import { I18nextProvider, initReactI18next } from 'react-i18next'
 import I18next from 'i18next'
@@ -38,7 +37,6 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        {/* <ParticlesBack /> */}
         <Footer />
       </PageLoadProvider>
       </I18nextProvider>

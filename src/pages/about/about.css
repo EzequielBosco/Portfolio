@@ -105,6 +105,7 @@ main p {
 
 
 .skill-container {
+    margin-top: 2rem;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -156,11 +157,16 @@ main p {
 
 @media screen and (min-width: 1080px) {
     .skill-container {
-        padding-top: 2rem;
         margin-bottom: 8rem;
     }
     .section-about {
         margin-top: 2rem;
+    }
+}
+
+@media (max-width: 1079px) {
+    .skills {
+        padding-bottom: 5rem;
     }
 }
 
