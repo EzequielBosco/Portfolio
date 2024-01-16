@@ -10,6 +10,7 @@ import { I18nextProvider, initReactI18next } from 'react-i18next'
 import I18next from 'i18next'
 import global_en from './translations/en/global.json'
 import global_es from './translations/es/global.json'
+import ParticlesBack from './components/Particles'
 const storedLanguage = localStorage.getItem('language') || 'en'
 
 I18next.use(initReactI18next).init({
@@ -38,6 +39,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
+        <ParticlesBack />
       </PageLoadProvider>
       </I18nextProvider>
     </BrowserRouter>

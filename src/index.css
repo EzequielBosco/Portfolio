@@ -115,7 +115,7 @@ canvas {
     padding-bottom: 4rem;
 }
 
-#particles-js {
+#tsparticles {
     position: fixed;
     width: 100%;
     height: calc(100%);

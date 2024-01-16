@@ -15,7 +15,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 3rem;
+    margin: 0 2rem 5rem 2rem;
 }
 
 .container-card {
@@ -160,9 +160,18 @@
     padding-right: 3px;
 }
 
+@media (min-width: 1250px) and (max-width: 1380px) {
+    .card {
+        max-width: 40%;
+    }
+}
+
 @media (max-width: 767px) {
     .card {
         max-width: 90%;
+    }
+    .container-work {
+        margin: 0 2rem 4rem 2rem;
     }
     .left p {
         font-size: 19px;
